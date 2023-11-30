@@ -1,0 +1,17 @@
+<rss version="2.0">
+<channel>
+<title>Notifications</title>
+<link>index.html</link>
+<description>Limited deals this Thursday!</description>
+<item>
+<title>New in our gallery</title>
+<link>gallery.html</link>
+<description>New photos of our completed models!</description>
+</item>
+<item>
+<title>All about us</title>
+<link>aboutus</link>
+<description>We welcome new crew!</description>
+</item>
+</channel>
+</rss>

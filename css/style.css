@@ -1,0 +1,421 @@
+*{
+    margin:0px auto;
+    padding:0px;
+    scroll-behavior:smooth;
+}
+body{font-family: 'Saira', sans-serif;}
+a{text-decoration: none;color:#fff;}
+ul{list-style-type: none;}
+.cleaner{clear:both;}
+.centriranje{width:98%;
+margin:0px auto;}
+header{width:100%;
+height:747px;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/pexels-cottonbro-studio-4489702.jpg");
+background-size: cover; 
+background-position: center;
+position:relative;
+background-attachment: fixed;
+}
+header a{color:rgb(255, 255, 255);}
+.active-link{text-decoration:none;}
+.active-link a::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background-color: rgb(189, 34, 34);
+    display:block;
+    margin:0 auto;
+    transition:0.5s;
+}
+.active-link a:hover:after{
+    width:100%;
+}
+#logo{float:left;} 
+#logo img{height:158px;}
+.dm4{margin-right: 4%;}
+nav,.container1{
+    display:flex;
+    justify-content: space-between;
+     align-items: center; 
+    backdrop-filter:blur(10px);
+    top:0;
+    position:absolute; 
+    box-shadow: 0  20px 30px rgba(0,0,0,0.2);
+}
+nav{height:50px; width:90%;padding: 2% 4%;}
+nav ul li{display:block;
+float:left;
+margin-left:35px;
+width:80px;
+text-align:center;
+padding-bottom:5px;
+font-size:20px;}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text1, .text2,.txt-btn{margin-bottom: 20px; 
+    position: relative;
+    animation:text 3s 1 ease-out;}
+.text-box span{
+    display:block;
+}
+@keyframes text {
+    0%{
+        opacity:0;
+        transform:translateY(80%);
+     }
+     20%{
+       opacity:0;
+    }
+    50%{
+        opacity:1;
+        transform:translateY(0%);
+    }  
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 25px;
+    color:#fff;
+}
+.txt-btn{
+    display: inline-block;
+    color:#fff;
+    border:2px solid #fff;
+    padding:12px 33px;
+    position:relative;
+    cursor: pointer;
+}
+.txt-btn:hover{
+    border:2px solid rgb(189, 34, 34);
+    background:rgb(189, 34, 34);
+    transition:1s;
+}
+#about,#ourteam{
+    width:100%;
+    margin:auto;
+    padding-top:40px;
+    padding-bottom: 50px;
+    background-color:#ececec;
+}
+.row{margin-top: 5%;
+    display:flex;
+    justify-content:space-between;
+}
+.about-col{
+    flex-basis:48%;
+    padding:30px 2px;
+    float:left;
+}
+.about-col img{
+    width:100%;
+}
+.about-col h2,#ourteam h2{
+    padding-top:0px;
+    font-size: 45px;
+    text-align: center;
+}
+.about-col p{
+    padding:10px 0 15px;
+    font-size: 18px;
+}
+.au-btn{
+    border:2px solid rgb(189, 34, 34);
+    background:rgb(189, 34, 34);
+}
+.bg-cover,.bg-cover2{
+    width:100%;
+height:550px;
+background-size: cover; 
+background-position:center;
+position:relative;
+background-attachment: fixed;
+}
+.bg-cover{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/pexels-mathias-reding-9381013.jpg");}
+#services,#contact,#pics{
+    text-align: center;
+    color:white;
+}
+#services h2,#contact h2,#pics h2{
+    color:#fff;
+    font-size: 45px;
+}
+.service-icon {
+    font-size: 53px;
+    margin:20px auto;
+    padding: 20px;
+    height:80px;
+    width:80px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+.col-md-3{
+    margin-right:2%;
+    margin-left:2%;
+}
+#ourteam{
+    position:relative;
+    align-items: center;
+    flex-direction: column;
+}
+.box img{
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+}
+.box{
+    padding:16px;
+    background: #c2c5cd;
+    border-radius: 15px;
+    transition:all .35s ease;
+    width:35.5%;
+}
+.box h3{
+    font-size:23px;
+    color:darkred;
+}
+.box h4{
+    font-size: 20px;
+}
+.icons i{
+    display: inline-block;
+    color:#fff;
+    font-size: 20px;
+    padding-top: 4px;
+    margin:0 4px;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+.bg-cover2{
+height:658px;
+background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/pexels-cottonbro-studio-4489717.jpg");
+}
+.container1{ padding:20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.9);
+    border-radius: 6px;
+    width:85%;
+    height:450px;
+ }
+ .left-cont{flex-basis:25%;
+     float:left;
+    border-right: 2px solid rgb(189, 34, 34);}
+.left-cont,.contact-info-txt{
+  margin:14px;
+  text-align: center; 
+}.contact-info-txt i{
+    font-size:37px;
+    color:rgb(189, 34, 34);
+   padding-bottom: 5px;
+}
+.contact-info-txt h4{font-size: 20px;}
+.contact-info-txt h4,.contact-info-txt p{
+    padding-bottom: 8px;
+}
+.right-cont h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.right-cont form input{
+    width:290px;
+    height:40px;
+    padding-left:10px;
+    outline: none;
+    border:none;
+    font-size: 15px;
+    background: none;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    color:white;
+}
+.right-cont form input::placeholder{
+    color:#ddd;
+}
+.right-cont form #tbSurname,
+.right-cont form #tbPhone{
+    margin-left: 25px;
+}
+.right-cont form h4{
+    color:#ddd;
+    width:600px;
+    margin-top: 20px;
+}
+.right-cont form textarea{
+    background: none;
+    border:none;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    font-size: 15px;
+    padding:10px;
+    outline:none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    min-height: 80px;
+}
+.right-cont form input[type="submit"]{
+    border:none;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor:pointer;
+    font-family:'Saira', sans-serif;
+    width:100px;
+    padding:0;
+    margin-right: 520px;
+    margin-bottom: 30px;
+    transition:0.3s;
+    color:black;
+}
+.right-cont form input[type="submit"]:hover{
+    opacity:0.9;
+}
+footer{
+    color:white;
+    background:rgb(34, 40, 45);
+    padding-top: 50px;
+}
+.container2{
+    width:100%;
+margin:auto;
+display:flex;
+justify-content: center;
+}
+.footer-content{
+width:33.3%;
+}
+.footer-content h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.footer-content p{
+    width:190px;
+    margin:auto;
+    padding:7px;
+}
+.footer-content ul{text-align: center;}
+.list{padding:0;}
+.list li{
+    width:auto;
+    text-align: center;
+    padding:7px;
+    position: relative;
+}
+.list li::before{
+    content:'';
+    position:absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height:2px;
+    background:red ;
+    transition-duration: .5s;
+}
+.list li:hover::before{width:70px;}
+.socials{
+text-align: center;
+padding:0;
+}
+.socials li{
+    display: inline-block;
+    text-align: center;
+    padding:5px;
+}
+.socials i{
+    font-size: 25px;
+}
+.socials a:hover{
+    color:red;
+    transition-duration: .5s;
+}
+.bottom-bar{
+    background-color: black;
+    text-align: center;
+    padding:10px 0;
+    margin-top: 50px;
+}
+#sub-header{
+    width:100%;
+height:145px;
+background:rgba(57, 69, 69, 0.789);
+}
+#pics,#author{background:rgba(57, 69, 69, 0.789);
+    margin:0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+ #pics h2{ 
+    font-size: 55px;
+}
+.color-h2 h2
+{
+  background-image: linear-gradient(-225deg,
+    #151757 0%,
+    #61107a 29%,
+    #ff1313 67%,
+    #ffbb00 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+ background-size: 100% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.pics-col{
+   flex-basis:32%;
+    margin-bottom: 5px;
+    position:relative;
+    overflow:hidden;
+    transition:0.2s;
+}
+.pics-col:hover{
+    transform:translateY(-10px);
+}
+.pics-col img{ 
+    width:100%;
+    cursor:pointer;
+    filter: grayscale(55%);
+    transition: 0.2s ease-out;
+}
+.pics-col img:hover{
+ filter: grayscale(0%);      
+} .author-col{
+    flex-basis:23.3%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow:hidden;
+}
+.author-col img{ 
+    width:100%;
+}
+.author-col h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;   
+}
+.author-col h2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:8%;
+    color:rgb(160, 16, 16);
+    text-transform: uppercase;
+}
